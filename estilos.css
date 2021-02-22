@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.{
+    margin: 0;
+    padding:  0;
+    box-sizing:  border-box;
+}
+
+body {
+    margin: 0;
+    -family:'Roboto', sans-serif;
+    border-image: url(img/pancopaisi.png);
+}
+header{
+    width: 100%;
+    background: rgb(0,254,250);
+    background: linear-gradient(0deg, rgba(0,254,250,1) 0%, rgba(69,171,148,1) 36%, rgba(13,55,130,1) 72%, rgba(7,16,112,1) 100%);
+
+    position: fixed;
+}
+
+#btn-menu{
+    display: none;
+}
+ header label{
+     display:none;
+     width: 30px;
+     height: 30px;
+     padding: 10px;
+     border-right: 1px solid rgb(255, 255, 255);
+ }
+
+ header label:hover{
+    cursor: pointer;
+    background:rgba(0, 0, 0, 0.3);
+ }
+ 
+ .menu ul{
+     margin: 0;
+     list-style: none;
+     padding: 0;
+     display: flex;
+ }
+
+ .menu li{
+    flex-grow: 1 ;
+}
+ 
+ .menu li:hover{
+    background:rgba(0,0,0,0.3);
+}
+
+
+ .menu li a{
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main{
+    padding-top: 04rem;
+}
+
+
+
+.menu li{
+border-right: 1px solid #fff;
+}
+ @media (max-width:888px){
+     header label{
+         display: block;
+     }
+
+     .menu{
+         position: absolute;
+         width: 70%;
+         background: rgb(0,254,250);
+         background: linear-gradient(0deg, rgba(0,254,250,1) 0%, rgba(69,171,148,1) 36%, rgba(13,55,130,1) 72%, rgba(7,16,112,1) 100%);
+         margin-left: -70%;
+         transition: all 0.5s linear;
+       
+     }
+     .menu ul{
+         flex-direction: column;
+     }
+
+     .menu li{
+         border-top: 1px solid #fff;
+     }
+
+    }
+    
+    #btn-menu:checked ~ .menu {
+          margin: 0;
+    }
+    .logo-copaisi{
+        width: 80px;
+        height:60px;
+    }
+
+    /parrafo/
+    .conteiner{
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 60px;
+        background: #e3edf2;
+        box-shadow:  7px 7px 14px #d5dfe3,
+             -7px -7px 14px #f1fbff;
+        margin: 190px;
+        border-top: 6px solid #000000;
+       
+    }
+    .cronograma--titulo{
+        font-size: 50px;
+        margin-bottom: 20px;
+        border-image: url(img/..img2.jp.png);
+        list-style-image: url(img/..img2.jp.png);
+    }
+   
+    .conteiner img{
+        width: 150px;
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 05px;
+       
+    }
+     
+    .conteiner p{
+        font-size: 20px;
+        font-weight: 300;
+    }  
+    /imagen svg/
+    .imagen--svg{
+        height: 250px;
+        width: 450px;
+    }
+    .ponentes {
+        list-style-image: url(img/ismael.png);
+        margin-left: 30;
+        margin-right: 05px;
+        width: 50px;
+}
+        
+
+    /redes/
+    .redes--sociales{
+        height: 300px;
+        width: 300px;
+        margin: 140px 0;
+    }
+    
+    .redes{
+        margin-left: 0;
+        width: 70%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor:pointer;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .list--redes{
+        position: relative;
+        transform: translate(-90px);
+        background: rgb(14, 13, 13);
+        list-style: none;
+        padding: 8px 0;
+        margin: 8px 0;
+        transition: .5s;
+        width: 150px;
+        border-radius: 0 200px 200px 0;
+    }
+    
+    .list--redes:hover:nth-child(1){
+        background: #04028f;
+    }
+    
+    .list--redes:hover:nth-child(2){
+        background: #d48dbd;
+    }
+    
+    .list--redes:hover:nth-child(3){
+        background: #3b7fe6;
+    }
+    
+    .list--redes:hover{
+        transform: translateX(0);
+    }
+    
+    .redes--div{
+        font-weight: bold;
+        color:rgb(255, 255, 255);
+        font-family: sans-serif;
+        text-decoration: none;
+        padding-left: 10px;  
+    }
+    
+    i{
+        margin-left: 2px;
+        padding: 10px 10px;
+        border-radius: 100%;
+        color:rgb(0, 0, 0);
+        background: rgb(255, 255, 255);
+    }
+    
+    .con{
+        font-size: 20px;
+    }
+    
+    .facebook{
+        position: relative;
+        left: 6px;
+    }
+    
+    .twitter{
+        position: relative;
+        left: 25px;
+    }
+    
+    .instagram{
+        position: relative;
+        left: -3px ;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    .lista{
+        list-style-type: square;
+    }
+    
+    .listas__copaisi{
+        list-style-type: square;
+    }
+
+
+    /fondo/
+
+    body
+    {
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+    padding:0px;
+    
+    background-color:#ccc;
+    background:url(img/..img2.jp.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    }
+    #principal
+    {
+     width:1020px;
+     text-align:center;
+     margin:0 auto;
+     padding:0px;
+     
+    }
+    h1
+    {
+    margin-top:150px;
+    font-size:38px;
+    color:#000;
+    background:#CCC;
+    -webkit-opacity:0.4;
+    -moz-opacity:0.4;
+    -o-opacity:0.4;
+    -ms-opacity:0.4;
+    opacity:0.4;
+    }
+    h1 p
+    {
+    font-size:18px;
+    }
+    .readMore {
+        
+        color: #080807;
+        margin-top: 10px;
+    }
+
+ 
+
+    /footer/
+
+
+    .footer{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .footer ul li{
+        display: inline-block;
+        margin: 0 5px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .footer ul li a{
+        display: block;
+        padding: 5px 10px;
+        background: rgb(73, 74, 77);
+        color:#fff;
+        line-height: 25px;
+        font-size: 20px;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: .2s;
+    }
+    .footer ul li a:hover{
+        transform:translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+        filter:none;
+    }
+
+    .footer ul li .nav-facebook:hover{
+        background: #050d4e;
+    }
+
+    .footer ul li .nav-instagram:hover{
+        background: #eeade0;
+    }
+    .footer ul li .nav-twitter:hover{
+        background: #00bef8;
+    }
